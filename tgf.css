@@ -1,0 +1,135 @@
+.header{
+    margin-top: 10vh;
+    font-family: 'Bebas Neue';
+    font-size: 10rem;
+    text-align: center;
+    color: white;
+    text-shadow: 7px 7px rgb(148, 148, 148);
+    user-select: none;
+}
+.tgfr{
+    display: none;
+}
+.form{
+    margin: auto;
+    color: white;
+    width: 30vw;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input{
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+}
+select{
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+.submit{
+    color: white;
+    background-color: #58cc02;
+    box-shadow: 0 5px 0 #3b7c0a;
+    border-radius: 5px;
+    border: none;
+    height: 5vh;
+    width: fit-content;
+    font-size: larger;
+    font-family: 'Minecraft','Roboto';
+    margin-left: 25%;
+    padding:0 20px;
+}
+.submit:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+.elvarasok{
+    font-size: 1.5rem;
+    width: fit-content;
+    text-align:start;
+    color: white;
+    margin: auto;
+}
+.formflex{
+    display: flex;
+    vertical-align: middle;
+}
+.alertok{
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    border-radius: 5px;
+    background-color: #a8f0c6;
+    font-size: 2rem;
+    width: fit-content;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 10px;
+    box-shadow: -8px 0 0 0 #157a3f;
+}
+.exit{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+.loadingbar{
+    width: calc(100% + 28px);
+    background-color: gainsboro;
+    height: 5px;
+    border-radius: 5px;
+    transform: translateX(-18px) translateY(10px);
+}
+.progress{
+    border-radius: 5px;
+    height: 5px;
+    width: 50%;
+    background-color: #797979;
+}
+.loading{
+    animation: loading 5s linear;
+}
+.loadingfast{
+    animation: loading 1s linear;
+}
+@keyframes loading {
+    from {width: 0%;}
+    to {width: 100%;}
+}
+.alertnotok{
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    border-radius: 5px;
+    background-color: #eb8787;
+    font-size: 2rem;
+    width: fit-content;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 10px;
+    box-shadow: -8px 0 0 0 #cc1818;
+}
+.error{
+    display: inline;
+}
+.alertnotyet{
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    border-radius: 5px;
+    background-color: #fff79a;
+    font-size: 2rem;
+    width: fit-content;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 10px;
+    box-shadow: -8px 0 0 0 #ffcf22;
+}
